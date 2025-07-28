@@ -41,16 +41,13 @@ Want to make this portfolio your own? Here’s how:
 
 Edit index.html to change text, links, and sections.
 
-Modify styles/main.css to adjust colors, fonts, and layout.
+Modify static/css/style.css to adjust colors, fonts, and layout.
 
 2. Add Your Projects
 
-Update the projects section in index.html or dynamically load them via scripts/main.js.
+Update the projects section in index.html or dynamically load them via static/js/main.js.
 
-3. Change Theme Colors
 
-Modify CSS variables in :root (if using them) or directly in the stylesheet.
-
-Enable Contact Form
+3. Enable Contact Form
 
 Use FormSubmit (simple) or Netlify Forms (no backend needed).

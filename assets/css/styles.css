@@ -1,0 +1,94 @@
+/*=============== GOOGLE FONTS ===============*/
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: ;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-color: ;
+  --first-color-dark: ;
+  --first-color-light: ;
+  --title-color: ;
+  --text-color: ;
+  --body-color: ;
+  --container-color: ;
+  --border-color: ;
+  --white: ;
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: ;
+  --big-font-size: ;
+  --h1-font-size: ;
+  --h2-font-size: ;
+  --h3-font-size: ;
+  --larger-font-size: ;
+  --large-font-size: ;
+
+  /*========== Font weight ==========*/
+  --weight-300: ;
+  --weight-400: ;
+  --weight-600: ;
+}
+
+/*=============== DARK THEME ===============*/
+
+/*=============== BASE ===============*/
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+/*=============== STYLE SWITCHER ===============*/
+
+/*=============== HEADER & NAV ===============*/
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/* Home animation */
+
+/*=============== BUTTON ===============*/
+
+/* Button hover */
+
+/*=============== ABOUT ===============*/
+
+/* About img hover */
+
+/*=============== QUALIFICATION ===============*/
+
+/*=============== SERVICES ===============*/
+
+/* Services hover */
+
+/*=============== SKILLS ===============*/
+
+/*=============== PORTFOLIO ===============*/
+
+/* Work hover */
+
+/*=============== TESTIMONIALS ===============*/
+
+/*=============== CONTACT ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 450px) {
+}

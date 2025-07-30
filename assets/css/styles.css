@@ -94,6 +94,28 @@ img {
   gap: 1.5rem;
 }
 
+.section {
+  padding-block: 6rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-400);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section__title::before {
+  content: attr(data-title);
+  display: block;
+  color: var(--first-color);
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+}
+
 /*=============== STYLE SWITCHER ===============*/
 
 /*=============== HEADER & NAV ===============*/
@@ -261,8 +283,104 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+}
+
+.about__img-wrapper {
+  position: relative;
+  height: 400px;
+}
+
+.about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+}
+
+.about__img:nth-child(1) {
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translateY(-1.25rem);
+}
+
+.about__img:nth-child(2) {
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translateY(-0.75rem);
+}
+
+.about__img:nth-child(3) {
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translateY(-0.25rem);
+}
+
+.about__img:nth-child(4) {
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translateY(0.25rem);
+}
 
 /* About img hover */
+.about__img-wrapper:hover .about__img {
+  transform: translateY(0);
+}
+
+.about__description {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about__data {
+  grid-template-columns: repeat(2, 1fr);
+  gap: .25rem;
+  margin-bottom: 3rem;
+}
+
+.data__item {
+  display: flex;
+  column-gap: .75rem;
+}
+
+.data__title {
+  font-size: var(--larger-font-size);
+}
+
+.about__link {
+  color: hsl(255, 73%, 57%);
+}
+
+.about__bottom,
+.about__social-links {
+  display: flex;
+  align-items: center;
+}
+
+.about__bottom {
+  column-gap: 3rem;
+}
+
+.about__social-links {
+  column-gap: 1.25rem;
+}
+
+.about__social-links::before {
+  content: '';
+  background-color: var(--text-color);
+  width: 60px;
+  height: 2px;
+}
+
+.about__social-link {
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.about__social-link:hover {
+  color: var(--first-color);
+}
 
 /*=============== QUALIFICATION ===============*/
 

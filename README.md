@@ -43,3 +43,9 @@ Want to make this portfolio your own? Here’s how:
   - Modify assets/css/style.css to adjust colors, fonts, and layout.
   - Change the pdf file in the assets folder to update your resume.
 
+## Resources
+
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Fancy Border Radius](https://9elements.github.io/fancy-border-radius/)
+- [CSS Clip-Path Generator](https://www.cssportal.com/css-clip-path-generator/)

@@ -67,9 +67,20 @@ h1,
 h2,
 h3 {
   color: var(--title-color);
+  font-weight: var(--weight-600);
 }
 
+ul {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 

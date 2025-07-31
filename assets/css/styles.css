@@ -34,6 +34,13 @@
 }
 
 /*=============== DARK THEME ===============*/
+#day-night:checked ~ * {
+  --title-color: hsl(247, 27%, 31%);
+  --text-color: hsl(0, 0%, 41%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(266, 78%, 98%);
+  --border-color: hsl(0, 0%, 87%);
+}
 
 /*=============== BASE ===============*/
 * {
@@ -54,7 +61,7 @@ body {
   font-size: var(--larger-font-size);
 }
 
-body {
+main {
   background-color: var(--body-color);
   color: var(--text-color);
 }
@@ -126,6 +133,181 @@ img {
 }
 
 /*=============== STYLE SWITCHER ===============*/
+input[type='radio'],
+input[type='checkbox'] {
+  display: none;
+}
+.style__switcher {
+  position: fixed;
+  right: 0;
+  bottom: 20%;
+  padding: 1rem;
+  width: 220px;
+  border: 1px solid var(--border-color);
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+#toggler:checked ~ .style__switcher {
+  transform: translateX(0);
+}
+
+.style__switcher-toggler,
+.style__switcher-theme {
+  position: absolute;
+  right: 110%;
+  color: var(--title-color);
+  background-color: var(--body-color);
+  border: 1px solid var(--border-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.style__switcher-toggler {
+  top: 7%;
+}
+
+.style__switcher-theme {
+  bottom: 7%;
+}
+
+.style__switcher-theme .fa-moon {
+  display: none;
+}
+
+#day-night:checked ~ * .fa-sun {
+  display: none;
+}
+
+#day-night:checked ~ * .fa-moon {
+  display: block;
+}
+
+.style__switcher-title {
+  font-size: var(--large-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.style__switcher-colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .5rem;
+}
+
+.style__switcher-colors .color {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.color-1 {
+  background-color: hsl(252, 35%, 51%);
+}
+
+.color-2 {
+  background-color: hsl(351, 85%, 51%);
+}
+
+.color-3 {
+  background-color: hsl(271, 76%, 53%);
+}
+
+.color-4 {
+  background-color: hsl(225, 73%, 57%);
+}
+
+.color-5 {
+  background-color: hsl(43, 74%, 49%);
+}
+
+.color-6 {
+  background-color: hsl(339, 81%, 66%);
+}
+
+.color-7 {
+  background-color: hsl(80, 61%, 50%);
+}
+
+.color-8 {
+  background-color: hsl(19, 96%, 52%);
+}
+
+.color-9 {
+  background-color: hsl(88, 65%, 43%);
+}
+
+.color-10 {
+  background-color: hsl(42, 100%, 50%);
+}
+
+#color-1:checked ~ * {
+  --first-color: hsl(252, 35%, 51%);
+  --first-color-dark: hsl(252, 25%, 51%);
+  --first-color-light: hsl(252, 100%, 83%);
+}
+
+#color-2:checked ~ * {
+  --first-color: hsl(351, 85%, 51%);
+  --first-color-dark: hsl(351, 75%, 51%);
+  --first-color-light: hsl(351, 100%, 83%);
+}
+
+#color-3:checked ~ * {
+  --first-color: hsl(271, 76%, 53%);
+  --first-color-dark: hsl(271, 60%, 53%);
+  --first-color-light: hsl(271, 100%, 83%);
+}
+
+#color-4:checked ~ * {
+  --first-color: hsl(225, 73%, 57%);
+  --first-color-dark: hsl(225, 63%, 57%);
+  --first-color-light: hsl(225, 100%, 83%);
+}
+
+#color-5:checked ~ * {
+  --first-color: hsl(43, 74%, 49%);
+  --first-color-dark: hsl(43, 64%, 49%);
+  --first-color-light: hsl(43, 100%, 83%);
+}
+
+#color-6:checked ~ * {
+  --first-color: hsl(339, 81%, 66%);
+  --first-color-dark: hsl(339, 71%, 66%);
+  --first-color-light: hsl(339, 100%, 83%);
+}
+
+#color-7:checked ~ * {
+  --first-color: hsl(80, 61%, 50%);
+  --first-color-dark: hsl(80, 51%, 50%);
+  --first-color-light: hsl(80, 100%, 83%);
+}
+
+#color-8:checked ~ * {
+  --first-color: hsl(19, 96%, 52%);
+  --first-color-dark: hsl(19, 86%, 52%);
+  --first-color-light: hsl(19, 100%, 83%);
+}
+
+#color-9:checked ~ * {
+  --first-color: hsl(88, 65%, 43%);
+  --first-color-dark: hsl(88, 55%, 53%);
+  --first-color-light: hsl(88, 100%, 83%);
+}
+
+#color-10:checked ~ * {
+  --first-color: hsl(42, 100%, 50%);
+  --first-color-dark: hsl(42, 85%, 50%);
+  --first-color-light: hsl(42, 100%, 83%);
+}
+
 
 /*=============== HEADER & NAV ===============*/
 .header {
@@ -729,6 +911,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__copyright {
+  color: var(--text-color);
 }
 
 .footer__social-links {

@@ -1106,6 +1106,10 @@ input[type='checkbox'] {
     grid-template-columns: 1fr;
   }
 
+  .contact__btn {
+    width: 100%;
+  }
+
   .footer__container {
     flex-direction: column;
     row-gap: 1rem;

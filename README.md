@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-Welcome to my personal portfolio repository! This project showcases my skills, projects, and professional journey using HTML and CSS.
+Welcome to my personal portfolio! This project showcases my skills, projects, and professional journey. It is developed using HTML and CSS.
 It is a fully responsive, static website designed to provide a smooth and engaging user experience.
 
 ## ✨ Features
@@ -10,10 +10,9 @@ It is a fully responsive, static website designed to provide a smooth and engagi
 - **Responsive Design**: The website is fully responsive, ensuring a seamless experience across all devices.
 - **Modern UI**: A clean and modern user interface with intuitive navigation.
 - **Interactive Elements**: Smooth animations, hover effects, and dynamic content.
-- **Project Gallery**: Displays my work with descriptions, technologies used, and links.
+- **Project Gallery**: Displays my work with descriptions, and links.
 - **Skills Section**: Highlights my technical abilities with visual progress bars.
 - **About Me**: A short bio, background, and professional experience.
-- **Contact Form**: Functional form.
 
 ## 🛠️ Built With
 
@@ -24,7 +23,7 @@ It is a fully responsive, static website designed to provide a smooth and engagi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/munyokii/munyoki.git
+   git clone https://github.com/munyokii/munyokii.github.io.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -40,10 +39,9 @@ Want to make this portfolio your own? Here’s how:
 1.Update Content
 
   - Edit index.html to change text, links, and sections.
-  - Modify assets/css/style.css to adjust colors, fonts, and layout.
-  - Change the pdf file in the assets folder to update your resume.
+  - Modify assets/css/styles.css to adjust colors, fonts, and layout.
 
-## Resources
+## 📁 Resources
 
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)

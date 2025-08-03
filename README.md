@@ -27,7 +27,7 @@ It is a fully responsive, static website designed to provide a smooth and engagi
    ```
 2. Navigate to the project directory:
    ```bash
-   cd munyoki
+   cd munyokii.github.io.git
    ```
 3. Open the `index.html` file in your browser to view the website.
 

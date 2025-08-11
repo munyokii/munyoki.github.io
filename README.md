@@ -5,6 +5,11 @@
 Welcome to my personal portfolio! This project showcases my skills, projects, and professional journey. It is developed using HTML and CSS.
 It is a fully responsive, static website designed to provide a smooth and engaging user experience.
 
+## Live Demo
+
+- [Live Site](https://munyokii.github.io/)
+
+
 ## ✨ Features
 
 - **Responsive Design**: The website is fully responsive, ensuring a seamless experience across all devices.
